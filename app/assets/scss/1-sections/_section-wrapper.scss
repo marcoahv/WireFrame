@@ -1,0 +1,29 @@
+.section-wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
+
+  &--hero {
+    padding-bottom: 3rem;
+
+    @include atLarge {
+      padding: 3rem 0;
+    }
+  }
+
+  &--statistics {
+    max-width: 100%;
+  }
+
+  &--features {
+    max-width: 110rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    padding: 6rem 0;
+
+    @include atMedium {
+      gap: 12rem;
+    }
+  }
+}

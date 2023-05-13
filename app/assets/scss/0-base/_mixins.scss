@@ -1,0 +1,39 @@
+// Base 375
+
+@mixin atSmall {
+  //is width >= 530
+  @media (min-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin atExtraLarge {
+  @media (min-width: 1300px) {
+    @content;
+  }
+}
+
+// to copy and paste
+
+@include atSmall {
+}
+
+@include atMedium {
+}
+
+@include atLarge {
+}
+
+@include atExtraLarge {
+}

@@ -1,0 +1,43 @@
+.cta-row {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__image-container {
+    width: 100%;
+    display: flex; //fixes 2px difference on bottom
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  &__text-container {
+    grid-column: 1;
+    grid-row: 1;
+
+    margin: 0 2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 6rem;
+
+    @include atSmall {
+      max-width: 57rem;
+      padding-top: 8rem;
+    }
+
+    @include atMedium {
+      margin-left: 15%;
+      max-width: 50%;
+      padding-top: 10rem;
+    }
+
+    @include atExtraLarge {
+      align-self: center;
+      max-width: 46%;
+    }
+  }
+
+  &__btn-container {
+    margin-top: 5rem;
+  }
+}

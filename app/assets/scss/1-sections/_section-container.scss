@@ -1,0 +1,29 @@
+.section-container {
+  max-width: 100%;
+
+  &--header {
+    background-color: $gray;
+  }
+
+  &--hero {
+    background-color: $gray;
+  }
+
+  &--statistics {
+    background-color: $gray;
+    border-bottom: 2px solid $gray-dark;
+    border-top: 2px solid $gray-dark;
+  }
+
+  &--features {
+    background-color: $gray;
+  }
+
+  &--ratings {
+    background-color: $gray-light;
+  }
+
+  &--footer {
+    background-color: $gray-light;
+  }
+}

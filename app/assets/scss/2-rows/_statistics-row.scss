@@ -1,0 +1,28 @@
+.statistics-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0rem;
+  justify-content: center;
+
+  @include atExtraLarge {
+    margin: 0 2rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    margin: 0 2rem;
+
+    @include atSmall {
+      margin: 2rem 2rem;
+    }
+
+    @include atLarge {
+      margin: 2rem 8rem;
+    }
+
+    @include atExtraLarge {
+      margin: 0 0rem;
+    }
+  }
+}

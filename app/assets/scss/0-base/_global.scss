@@ -1,0 +1,23 @@
+/* css reset */
+*,
+*::after,
+*::before,
+*:active,
+*:visited {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root font size - (100% = 16px) - (62.5% = 10px)*/
+html {
+  font-size: 62.5%;
+}
+
+/* project-wide font definitions */
+body {
+  font-family: $montserrat;
+  font-weight: $fw-regular;
+  line-height: 1.2;
+  color: $text-dark;
+}

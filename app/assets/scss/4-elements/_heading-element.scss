@@ -1,0 +1,42 @@
+.heading-element {
+  font-weight: $fw-regular;
+  line-height: 1;
+
+  &--hero {
+    font-size: $h-3;
+  }
+  @include atSmall {
+    font-size: $h-2;
+  }
+  @include atExtraLarge {
+    font-size: $h-1;
+  }
+
+  &--stats {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+    padding: 2rem 0 0.5rem 0;
+  }
+
+  &--feature {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+  }
+
+  &--cta {
+    font-size: $h-3;
+
+    @include atSmall {
+      font-size: $h-2;
+    }
+
+    @include atExtraLarge {
+      font-size: $h-1;
+    }
+  }
+
+  &--footer-list {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+  }
+}

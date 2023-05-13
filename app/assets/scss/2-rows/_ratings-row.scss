@@ -1,0 +1,13 @@
+.ratings-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__rating-container {
+    margin: 3rem 4rem 3rem 4rem;
+
+    @include atExtraLarge {
+      margin: 5rem 4rem 4rem 4rem;
+    }
+  }
+}

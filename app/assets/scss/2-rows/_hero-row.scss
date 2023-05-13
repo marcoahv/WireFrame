@@ -1,0 +1,41 @@
+.hero-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 3rem;
+
+  @include atMedium {
+    gap: 2rem;
+    margin: 0 10rem;
+  }
+
+  @include atLarge {
+    flex-direction: row;
+    margin: 0 6rem;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include atLarge {
+      gap: 2.5rem;
+      max-width: 50%;
+    }
+  }
+
+  &__btn-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  &__image-container {
+    margin-bottom: 3rem;
+  }
+
+  @include atLarge {
+    margin-bottom: auto;
+  }
+}

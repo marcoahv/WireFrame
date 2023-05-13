@@ -1,0 +1,19 @@
+.image-element {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+
+  &--ratings {
+    object-fit: contain;
+  }
+
+  &--feature {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  &--cta {
+    width: 100%;
+    object-fit: cover;
+  }
+}

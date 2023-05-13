@@ -1,0 +1,46 @@
+.paragraph-element {
+  font-weight: $fw-regular;
+  line-height: 1.5;
+
+  &--hero-description {
+    font-size: $fs-xs;
+
+    @include atSmall {
+      font-size: $fs-sm;
+    }
+  }
+
+  &--feature-description {
+    font-size: $fs-xs;
+
+    @include atSmall {
+      font-size: $fs-sm;
+    }
+  }
+
+  &--stats-title {
+    font-size: $fs-base;
+    margin-bottom: 1rem;
+  }
+
+  &--stats-description {
+    font-size: $fs-base;
+    font-weight: $fw-semibold;
+    padding-bottom: 2rem;
+
+    @include atExtraLarge {
+      font-size: $fs-sm;
+    }
+  }
+  &--cta-description {
+    font-size: $fs-xs;
+
+    @include atSmall {
+      font-size: $fs-sm;
+    }
+  }
+
+  &--footer-legal {
+    font-size: $fs-sm;
+  }
+}

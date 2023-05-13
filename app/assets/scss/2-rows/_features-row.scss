@@ -1,0 +1,54 @@
+.features-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: 0 3rem;
+
+  &--reverse {
+    flex-direction: column-reverse;
+  }
+
+  @include atMedium {
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 6rem;
+  }
+
+  @include atLarge {
+    gap: 4rem;
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 2rem;
+
+    @include atMedium {
+      max-width: 50%;
+      gap: 1rem;
+    }
+
+    @include atLarge {
+      padding-top: 2rem;
+    }
+  }
+  &__btn-container {
+    margin-top: 3rem;
+
+    @include atMedium {
+      margin-top: 2rem;
+    }
+
+    @include atLarge {
+      margin-top: 4rem;
+    }
+  }
+
+  &__image-container {
+    display: flex;
+    align-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}

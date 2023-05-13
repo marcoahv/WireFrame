@@ -1,0 +1,54 @@
+.btn-element {
+  display: inline-block;
+  text-decoration: none;
+  background-color: $gray;
+  color: $text-dark;
+  font-weight: $fw-regular;
+  padding: 1rem 3rem;
+  font-size: $fs-xs;
+
+  transition: all 0.3s ease 0s;
+
+  @include atSmall {
+    font-size: $fs-sm;
+  }
+
+  @include atMedium {
+    font-size: $fs-base;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $gray-dark;
+    color: $text-light;
+  }
+
+  &--outline {
+    border: 0.2rem solid $gray-dark;
+  }
+
+  &--cta {
+    background-color: $primary-light;
+    border: none;
+  }
+
+  &--cta-dark {
+    background-color: $primary-dark;
+    color: $gray-light;
+  }
+
+  &--cta:hover,
+  &--cta:active {
+    background-color: $primary;
+    color: $text-light;
+  }
+
+  &--ghost {
+    border: none;
+  }
+  &--ghost:hover,
+  &--ghost:active {
+    background-color: $secondary-light;
+    color: $text-light;
+  }
+}
