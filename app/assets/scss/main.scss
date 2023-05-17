@@ -1,12 +1,14 @@
 @import '1-base/variables';
 @import '1-base/global';
 @import '1-base/mixins';
+
 @import '2-elements/logo-element';
 @import '2-elements/link-element';
 @import '2-elements/btn-element';
 @import '2-elements/heading-element';
 @import '2-elements/image-element';
 @import '2-elements/paragraph-element';
+
 @import '4-rows/header-row';
 @import '4-rows/hero-row';
 @import '4-rows/features-row';
@@ -14,5 +16,6 @@
 @import '4-rows/ratings-row';
 @import '4-rows/cta-row';
 @import '4-rows/footer-row';
+
 @import '5-sections/section-container';
 @import '5-sections/section-wrapper';
