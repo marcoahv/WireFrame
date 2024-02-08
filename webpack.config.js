@@ -61,7 +61,7 @@ if (currentTask == 'dev') {
     watchFiles: './app/**/*.html',
     static: path.join(__dirname, 'app'),
     hot: true,
-    port: 3000,
+    port: 3001,
     host: '0.0.0.0',
   }
   config.mode = 'development'
