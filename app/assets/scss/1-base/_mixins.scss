@@ -1,7 +1,7 @@
-// Base 375
+//& Base 375
 
 @mixin atSmall {
-  //is width >= 530
+  //& is width >= 530
   @media (min-width: 530px) {
     @content;
   }
